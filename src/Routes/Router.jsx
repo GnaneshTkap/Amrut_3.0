@@ -1,7 +1,7 @@
 import ProtectRoutes from "../components/Auth/ProtectRoutes";
 import Layout from "../Layout";
-import Login from "../components/Auth/Login";
 import { createBrowserRouter } from "react-router-dom";
+import LoginPage from "../components/Auth/LoginPage";
 
 export const routes = createBrowserRouter([
   {
@@ -13,5 +13,5 @@ export const routes = createBrowserRouter([
     ),
     children: [],
   },
-  { path: "/login", element: <Login /> },
+  { path: "/login", element: <LoginPage /> },
 ]);

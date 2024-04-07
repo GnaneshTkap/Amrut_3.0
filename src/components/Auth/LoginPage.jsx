@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BackgroundGradientAnimation } from "../ui/GradientAnimation";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
@@ -8,8 +8,15 @@ import {
   IconBrandGoogle,
   IconBrandOnlyfans,
 } from "@tabler/icons-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function LoginPage() {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+    });
+  }, []);
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted");
@@ -26,7 +33,11 @@ export default function LoginPage() {
         </div>
 
         <div>
-          <div className="max-w-md w-full mx-auto z-10 rounded-none md:rounded-2xl p-4 md:p-8  shadow-input bg-gradient-to-b from-black/30 to-black/10 absolute top-0 left-0 right-0 mt-24">
+          <div
+            className="max-w-md w-full mx-auto z-10 rounded-none md:rounded-2xl p-4 md:p-8  shadow-input bg-gradient-to-b from-black/70 to-black/10 absolute top-0 left-0 right-0 mt-24"
+            data-aos="zoom-in"
+            data-aos-delay="10"
+          >
             <h2 className="font-bold text-xl text-neutral-200">
               Welcome to TKAP
             </h2>
