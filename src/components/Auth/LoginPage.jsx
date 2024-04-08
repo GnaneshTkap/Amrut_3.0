@@ -51,7 +51,7 @@ export default function LoginPage() {
                   id="username"
                   placeholder="Gnanesh"
                   type="username"
-                  className="bg-gradient-to-b from-white/80 to-white/20"
+                  className=""
                 />
               </LabelInputContainer>
               <LabelInputContainer className="mb-4">
@@ -62,7 +62,7 @@ export default function LoginPage() {
                   id="password"
                   placeholder="••••••••"
                   type="password"
-                  className="bg-gradient-to-b from-white/80 to-white/20"
+                  className=""
                 />
               </LabelInputContainer>
 

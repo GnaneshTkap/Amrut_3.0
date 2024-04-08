@@ -3,10 +3,12 @@ import Layout from "../Layout";
 import { createBrowserRouter } from "react-router-dom";
 import LoginPage from "../components/Auth/LoginPage";
 import Dashboard from "@/components/Dashboard/Dashboard";
+import { ErrorPage } from "@/components/ErrorForm/ErrorPage";
 
 export const routes = createBrowserRouter([
   {
     path: "/",
+    errorElement: <ErrorPage />,
     element: (
       <ProtectRoutes>
         <Layout />
