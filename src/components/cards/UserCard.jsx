@@ -12,7 +12,7 @@ export function UserCard() {
         <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 max-h-[240px] sm:w-[435px] w-[300px] overflow-hidden rounded-2xl flex flex-col justify-center">
           <div className="flex justify-center flex-col items-center">
             <Avatar className="w-24 h-24">
-              <AvatarImage src="https://avatars.githubusercontent.com/u/99138623?s=96&v=4" />
+              <AvatarImage src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
 

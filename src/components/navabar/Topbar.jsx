@@ -2,6 +2,7 @@ import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import ProfileBar from "./ProfileBar";
 import Theme from "./Theme";
+import Sidebar from "./Sidebar";
 
 const Topbar = () => {
   return (
@@ -20,52 +21,15 @@ const Topbar = () => {
     // </nav>
     <header class="fixed top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div class="container flex h-14 max-w-screen-2xl items-center">
-        <button
-          className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 py-2 mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 "
-          type="button"
-          aria-haspopup="dialog"
-          aria-expanded="false"
-          aria-controls="radix-:R16u6la:"
-          data-state="closed"
-        >
-          <svg
-            strokeWidth="1.5"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-          >
-            <path
-              d="M3 5H11"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M3 12H16"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M3 19H21"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-          </svg>
-          <span className="sr-only">Toggle Menu</span>
-        </button>
-        <a class="mr-6 flex items-center space-x-2" href="/">
+        <Sidebar />
+        <a class="ml-2 flex items-center space-x-2" href="/">
           <Avatar className="h-6 w-8">
             <AvatarImage src="/logo.png" />
             <AvatarFallback>TKAP</AvatarFallback>
           </Avatar>
           <span className="hidden font-bold sm:inline-block">
-            <span className="text-red-500">Toyota</span> Kirloskar Auto Parts
+            <span className="text-red-500 font-bold">Toyota</span> Kirloskar
+            Auto Parts
           </span>
         </a>
         <div class="mr-4 hidden md:flex">
