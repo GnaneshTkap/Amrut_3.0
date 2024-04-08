@@ -19,10 +19,10 @@ const Dashboard = () => {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 px-8"
+        className="relative flex "
       >
-        <div className="flex  mt-[80px] gap-10  ">
-          <div className="flex flex-col gap-6 ">
+        <div className="flex mt-[80px]  gap-6  ">
+          <div className="flex flex-col gap-5 ">
             <UserCard />
             <AnnouncementCard />
           </div>

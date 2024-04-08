@@ -1,14 +1,15 @@
 import React from "react";
 import { Meteors } from "../ui/meteors";
+import { TyperEffect } from "../Shared/TyperEffect";
 
 const AnnouncementCard = () => {
   return (
-    <div className=" rounded-lg border bg-card text-card-foreground overflow-hidden shadow-xl max-h-[248px] sm:w-[435px] overflow-y-auto relative bg-transparent">
+    <div className=" rounded-lg border text-card-foreground overflow-hidden shadow-xl max-h-[248px] sm:w-[435px] overflow-y-auto relative bg-transparent">
       {/* <BackgroundGradientAnimation> */}
       <div className=" p-4 rounded-lg">
-        <h2 className="text-xl font-semibold mb-4 text-black dark:text-white">
-          HR ANNOUNCEMENTS
-        </h2>
+        <div className="text-xl font-semibold mb-4 text-black dark:text-white flex gap-2">
+          HR <TyperEffect className="text-sm" />
+        </div>
         <div className="border-b bg-black dark:border-white mb-0"></div>
         <div className="space-y-6">
           <div className="bg-transparent rounded-lg p-4  bg-opacity-75 ">
