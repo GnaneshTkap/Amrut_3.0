@@ -28,7 +28,6 @@ export function UserCard() {
             </p>
           </div>
 
-          {/* Meaty part - Meteor effect */}
           <Meteors number={20} />
         </div>
       </div>

@@ -1,10 +1,10 @@
 import React from "react";
+import { Meteors } from "../ui/meteors";
 
 const AnnouncementCard = () => {
   return (
-    <div className=" rounded-lg border bg-card text-card-foreground overflow-hidden shadow-xl max-h-[248px] sm:w-[435px] overflow-y-auto">
+    <div className=" rounded-lg border bg-card text-card-foreground overflow-hidden shadow-xl max-h-[248px] sm:w-[435px] overflow-y-auto relative bg-transparent">
       {/* <BackgroundGradientAnimation> */}
-
       <div className=" p-4 rounded-lg">
         <h2 className="text-xl font-semibold mb-4 text-black dark:text-white">
           HR ANNOUNCEMENTS
@@ -90,6 +90,7 @@ const AnnouncementCard = () => {
               </div>
             </div>
           </div>
+          <Meteors number={2} />
         </div>
       </div>
       {/* </BackgroundGradientAnimation> */}
