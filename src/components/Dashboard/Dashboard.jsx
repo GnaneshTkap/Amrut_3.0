@@ -6,6 +6,7 @@ import { DashboardGrid } from "./Layout";
 import { UserCard } from "../cards/UserCard";
 import { amrutList } from "@/constant/amrutList";
 import AmrutCards from "../cards/AmrutCards";
+import AnnouncementCard from "../cards/AnnocementCard";
 
 const Dashboard = () => {
   return (
@@ -23,7 +24,7 @@ const Dashboard = () => {
         <div className="flex  mt-[80px] gap-10  ">
           <div className="flex flex-col gap-6 ">
             <UserCard />
-            <UserCard />
+            <AnnouncementCard />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 h-[32rem] items-start overflow-y-auto w-full relative p-2 gap-1 flex-1 rounded-lg border shadow-xl bg-gradient-to-br overflow-hidden">
             {amrutList.map((v) => (

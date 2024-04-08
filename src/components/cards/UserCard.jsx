@@ -9,7 +9,7 @@ export function UserCard() {
     <div className="">
       <div className=" w-full relative ">
         <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-        <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 max-h-[240px] sm:w-[400px] w-[300px] overflow-hidden rounded-2xl flex flex-col justify-center">
+        <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 max-h-[240px] sm:w-[435px] w-[300px] overflow-hidden rounded-2xl flex flex-col justify-center">
           <div className="flex justify-center flex-col items-center">
             <Avatar className="w-24 h-24">
               <AvatarImage src="https://avatars.githubusercontent.com/u/99138623?s=96&v=4" />
