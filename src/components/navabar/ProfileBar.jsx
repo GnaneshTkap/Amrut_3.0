@@ -29,8 +29,8 @@ const ProfileBar = () => {
             <div>GN</div>
           </span>
         </MenubarTrigger>
-        <MenubarContent className="absolute right-[-3rem] mt-3 min-w-[200px] rounded border rounded border bg-white py-2 dark:border-dark-400 dark:bg-black dark:text-white flex flex-col gap-2">
-          <button className="hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-200 ease-in-out w-full p-2 rounded-lg  ">
+        <MenubarContent className="absolute right-[-3rem] mt-3 min-w-[200px] rounded border  bg-white py-2 dark:border-dark-400 dark:bg-black dark:text-white flex flex-col gap-2">
+          <button className="dark:hover:bg-slate-800 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-grey-50 transition-colors duration-200 ease-in-out w-full p-2 rounded-lg  ">
             <div className="flex items-center gap-3 px-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ const ProfileBar = () => {
               </span>
             </div>
           </button>
-          <button className="hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-200 ease-in-out w-full p-2 rounded-lg ">
+          <button className="dark:hover:bg-slate-800 hover:bg-slate-100  focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-200 ease-in-out w-full p-2 rounded-lg ">
             <div className="flex items-center gap-3 px-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
