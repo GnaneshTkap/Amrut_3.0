@@ -31,14 +31,14 @@ const ProfileBar = () => {
             <div>GN</div>
           </span>
         </MenubarTrigger>
-        <MenubarContent className="absolute right-[-3rem] mt-3 min-w-[200px] rounded border bg-white py-2 dark:border-dark-400 dark:bg-dark-300 flex flex-col gap-2">
+        <MenubarContent className="absolute right-[-3rem] mt-3 min-w-[200px] rounded border rounded border bg-white py-2 dark:border-dark-400 dark:bg-black dark:text-white flex flex-col gap-2">
           <button className="hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-200 ease-in-out w-full p-2 rounded-lg  ">
             <div className="flex items-center gap-3 px-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 16 16"
-                className="w-6 h-6 text-blue-500"
+                className="w-4 h-6 text-blue-500"
               >
                 <path
                   fill="currentColor"
@@ -47,7 +47,7 @@ const ProfileBar = () => {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              <span className="text-gray-700 font-semibold">
+              <span className="text-grey-700 font-semibold text-sm  dark:text-slate-100">
                 Manage account
               </span>
             </div>
@@ -58,14 +58,16 @@ const ProfileBar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 15 16"
-                className="w-6 h-6 text-blue-500"
+                className="w-4 h-6 text-blue-500"
               >
                 <path
                   fill="currentColor"
                   d="M1 0a1 1 0 0 0-1 1v12a1 1 0 1 0 2 0V1a1 1 0 0 0-1-1Zm10.3 9.3a1 1 0 0 0 1.4 1.4l3-3a1 1 0 0 0 0-1.4l-3-3a1 1 0 1 0-1.4 1.4L12.58 6H5a1 1 0 1 0 0 2h7.59l-1.3 1.3Z"
                 ></path>
               </svg>
-              <span className="text-gray-700 font-semibold">Sign out</span>
+              <span className="text-gray-700 font-semibold text-sm dark:text-slate-100">
+                Sign out
+              </span>
             </div>
           </button>
         </MenubarContent>
