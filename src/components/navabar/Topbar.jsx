@@ -3,6 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import ProfileBar from "./ProfileBar";
 import Theme from "./Theme";
 import Sidebar from "./Sidebar";
+import { Link } from "react-router-dom";
 
 const Topbar = () => {
   return (
@@ -22,7 +23,7 @@ const Topbar = () => {
     <header class="fixed top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div class="container flex h-14 max-w-screen-2xl items-center">
         <Sidebar />
-        <a class="ml-2 flex items-center space-x-2" href="/">
+        <Link class="ml-2 flex items-center space-x-2" to="/">
           <Avatar className="h-6 w-8">
             <AvatarImage src="/logo.png" />
             <AvatarFallback>TKAP</AvatarFallback>
@@ -31,7 +32,7 @@ const Topbar = () => {
             <span className="text-red-500 font-bold">Toyota</span> Kirloskar
             Auto Parts
           </span>
-        </a>
+        </Link>
         <div class="mr-4 hidden md:flex">
           {/* <nav
            */}
