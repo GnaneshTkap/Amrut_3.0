@@ -1,7 +1,6 @@
 import { AnimatedTab } from "@/components/Shared/AnimatedTabs";
-import React from "react";
-import OtRequestForm from "./components/overtime/OtRequest";
 import OtApproval from "./components/overtime/OtApproval";
+import OtRequestForm from "./components/overtime/OtRequest";
 
 const HRMSLayout = () => {
   const tabs = [
