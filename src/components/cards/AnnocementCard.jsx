@@ -4,7 +4,7 @@ import { TyperEffect } from "../Shared/TyperEffect";
 
 const AnnouncementCard = () => {
   return (
-    <div className=" rounded-lg border text-card-foreground overflow-hidden shadow-xl max-h-[248px] sm:w-[435px] overflow-y-auto relative bg-transparent">
+    <div className=" rounded-lg border custom-scrollbar text-card-foreground overflow-hidden shadow-xl max-h-[248px] sm:w-[435px] overflow-y-auto relative bg-transparent cistom">
       {/* <BackgroundGradientAnimation> */}
       <div className=" p-4 rounded-lg">
         <div className="text-xl font-semibold mb-4 text-black dark:text-white flex gap-2">

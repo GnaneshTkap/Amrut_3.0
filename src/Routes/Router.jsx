@@ -3,7 +3,7 @@ import Layout from "../Layout";
 import { createBrowserRouter } from "react-router-dom";
 import LoginPage from "../components/Auth/LoginPage";
 import Dashboard from "@/components/Dashboard/Dashboard";
-import HrmsLayout from "@/components/AmrutPages/hrms/Layout";
+import HrmsLayout from "@/components/AmrutPages/hrms/HRMSLayout";
 import { ErrorPage } from "@/components/ErrorForm/ErrorPage";
 
 export const routes = createBrowserRouter([

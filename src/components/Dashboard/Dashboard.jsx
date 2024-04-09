@@ -26,7 +26,7 @@ const Dashboard = () => {
             <UserCard />
             <AnnouncementCard />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 h-[32rem] items-start overflow-y-auto w-full relative p-2 gap-1 flex-1 rounded-lg border shadow-xl bg-gradient-to-br overflow-hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 h-[32rem] items-start overflow-y-auto custom-scrollbar w-full relative p-2 gap-1 flex-1 rounded-lg border shadow-xl bg-gradient-to-br overflow-hidden">
             {amrutList.map((v) => (
               <AmrutCards
                 name={v.name}
